@@ -24,14 +24,21 @@ $(document).ready(function(){
         $('.ryu-ready').show();
     });
 
-    .keydown(function(event) {
-        if(event.which == 88){
-+       $('.ryu-ready').hide();
-+       $('.ryu-still').hide();
-+       $('.ryu-throwing').hide();
-+       $('.ryu-cool').show();
-}
+    $(document).keydown(function(event) {
+        if (event.keyCode == 88){  
+            $('.ryu-ready').hide();
+            $('.ryu-still').hide();
+            $('.ryu-throwing').hide();
+            $('.ryu-cool').show();
+        }
+    })
+    .keyup(function(event) {
+      if (event.keyCode == 88) {
+            $('.ryu-still').show();
+            $('.ryu-cool').hide();
+      }
     });
+
 
 
 });
