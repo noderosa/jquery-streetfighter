@@ -1,11 +1,7 @@
 $(document).ready(function(){
     $('.ryu').mouseenter(function(){
-        $('.ryu-still').block();
-        $('.ryu-ready').hide();
-        $('.hadouken').hide();
-        $('.ryu-throwing').hide();
-        ('.ryu-cool').hide();
-
+        $('.ryu-still').hide();
+        $('.ryu-ready').show();
     })
     .mouseleave(function() {
         $('.ryu-still').show();
