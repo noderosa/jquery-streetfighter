@@ -73,9 +73,8 @@ body {
 }
 
 .how-to {
-  display: none;
   font-family: comical;
-  font-size: 50px;
+  font-size: 25px;
   width: 600px;
 }
 
